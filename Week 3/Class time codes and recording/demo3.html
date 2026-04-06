@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saturday second design</title>
+        <style>
+            #bigDiv{
+                background-color: aqua;
+                display: flex;
+                flex-direction: row;
+                width: 300px;
+                height: 200px;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                /* column-gap: 150px; */
+                                
+                /* flex-wrap: wrap-reverse; */
+
+            }
+
+            #div1{
+                background-color: green;
+                flex-basis: 20px;
+                height: 100px;
+                flex-shrink: 1;
+                flex-grow: 0;
+                align-self: center;
+            }
+
+            .spanProp{
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body >
+        <div id="bigDiv">
+            <span class="spanProp">Span1</span>
+            <span class="spanProp">Span2</span>
+            <div id="div1">Div</div>
+            <span class="spanProp">Span3</span>
+            <span class="spanProp">Span4</span>
+        </div>
+                
+    </body>
+</html>

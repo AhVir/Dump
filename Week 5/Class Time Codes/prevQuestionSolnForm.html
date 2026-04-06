@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #mainDiv{
+                background-color: bisque;
+                width: 950px;
+                height:700px;
+                margin: auto;
+            }
+
+            nav{
+                display: flex;
+                background-color: gainsboro;
+            }
+
+            #navDiv1{
+                color: blue;
+                font-weight: bold;
+            }
+            #navDiv2{
+                margin-left: 45%;
+                color: blue;
+                font-weight: bold;
+            }
+
+            footer{
+                text-align: center;
+                background-image: linear-gradient(to right, orange, green, silver );
+                height: 35px;
+                padding-top: 8px;
+                box-sizing: border-box;
+                color: aliceblue;
+            }
+
+            #contentBody{
+                background-color: #bff5df;
+                height: 650px;
+                display: flex;
+            }
+
+            #thinColumn{
+               background-color: aqua; 
+               width: 35%;
+               height: 100%;
+               background-image: linear-gradient(to bottom, aqua,  rgb(133, 153, 165) );
+            }
+            #fatColumn{
+                background-color: gray; 
+                width: 65%;
+               height: 100%
+            }
+
+            #semesterHeaderDiv{
+               font-size: 25px; 
+               padding-left: 10px;
+               color: rgb(79, 75, 75);
+               font-weight: bolder;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="mainDiv">
+            <nav>
+                <div id="navDiv1">
+                    <span style="margin-left: 5px;">Dashboard</span>
+                    <span style="margin-left: 10px;">Courses</span>
+                    <span style="margin-left: 10px;">Notices</span>
+                    <span style="margin-left: 10px;">Results</span>
+                </div>
+                <div id="navDiv2">
+                    <span>Login</span>
+                    <span style="margin-left: 10px;">Sign Up</span>
+                    
+                </div>
+            </nav>
+        
+            <div id="contentBody">
+                <div id="thinColumn">
+                    <div id="semesterHeaderDiv" >
+                        Semesters
+                    </div>
+
+                    <div id="semesterNamesDiv">
+                        <div>Spring</div>
+                        <div>Fall</div>
+                        <div>Summer</div>
+                    </div>
+                    <div id="importantNoticeDiv">
+
+                    </div>
+                </div>
+                <div id="fatColumn">
+
+                </div>
+            </div>
+
+            <footer>
+                &copy; United International University | Web Programming Mid term
+            </footer>
+        
+        </div>
+    </body>
+</html>

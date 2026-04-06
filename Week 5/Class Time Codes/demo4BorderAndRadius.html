@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            #mainDiv{
+                background-color: rgb(255, 255, 255);
+                width: 320px;
+                height: 100px;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                margin: auto;                
+            }
+            #innerDiv{
+                background-color: rgb(255, 255, 255);
+                width: 280px;
+                height: 75px;
+                border-color: rgb(190, 186, 186);
+                border-width: 2px;
+                border-style: solid;
+                margin: auto;
+                margin-top: 10px;
+                padding-top: 10px;
+
+                box-sizing: border-box;
+
+                /* border-radius: 5px; */
+                /* OR */
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            #span1{
+                background-color: rgb(255, 255, 255);
+                margin-left: 85px;
+                border:2px solid green;
+                padding: 5px;
+                display: inline-block;
+                border-radius: 50%;
+                
+                width: 40px;
+                height: 40px;
+            }
+            #span2{
+                background-color: rgb(251, 251, 251);
+                margin-left: 5px;
+                border:2px solid green;
+                padding: 5px;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="mainDiv">
+            <div id="innerDiv">
+                <span id="span1">Span1</span>
+                <span id="span2">Span2</span>
+            </div>
+        </div>
+    </body>
+</html>

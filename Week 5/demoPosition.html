@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+
+<div style="background: lightgreen; padding: 10px;">
+    Normal text
+</div>
+
+<div style="position: relative; top: 20px; left: 30px; background: orange; padding: 10px;">
+    I am relative (moved 20px down, 30px right).
+</div>
+
+<div style="position: relative; width: 300px; height: 150px; background: lightgray;">
+    Parent (position: relative)
+
+    <div style="position: absolute; top: 10px; right: 10px; background: red; color: white; padding: 5px;">
+        Absolute box
+    </div>
+</div>
+
+<div style="position: fixed; top: 10px; right: 10px; background: purple; color: white; padding: 10px;">
+    I stay fixed on screen
+</div>
+
+<p style="margin-top: 2000px;">Scroll down to see that the box stays fixed.</p>
+</body>
+</html>

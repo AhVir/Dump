@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content-Box vs Border-Box</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <h1>content-box vs border-box</h1>
+    <p>Both divs have: <strong>width: 200px; padding: 20px; border: 5px solid black;</strong></p>
+
+    <div style="display: flex; gap: 30px; margin-top: 30px;">
+
+        <!-- content-box -->
+        <div 
+            style="
+                width: 200px;
+                padding: 20px;
+                border: 5px solid red;
+                background: #ffe5e5;
+                box-sizing: content-box;
+            ">
+            <strong>content-box</strong><br><br>
+            Total width becomes <strong>250px</strong>.<br><br>
+            Text is <strong>NOT pushed inward</strong>.<br>
+            Padding + border increase the box size OUTSIDE.
+        </div>
+
+        <!-- border-box -->
+        <div 
+            style="
+                width: 200px;
+                padding: 20px;
+                border: 5px solid green;
+                background: #e5ffe5;
+                box-sizing: border-box;
+            ">
+            <strong>border-box</strong><br><br>
+            Total width stays <strong>200px</strong>.<br><br>
+            ✔️ Text is <strong>pushed inward</strong>.<br>
+            Padding + border fit INSIDE the set width.
+        </div>
+
+    </div>
+
+</body>
+</html>

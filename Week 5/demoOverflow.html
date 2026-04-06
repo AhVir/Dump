@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overflow Examples</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+
+    <h1>Overflow Examples</h1>
+
+    <h2 style="margin-top: 40px;">1. overflow: visible (default)</h2>
+    <div 
+        style="
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: visible;
+        ">
+        This is longer than the box, so it overflows outside the border. 
+        You can see the extra content spilling out.This is longer than the box, so it overflows outside the border. 
+        You can see the extra content spilling out.
+    </div>
+
+    <h2 style="margin-top: 40px;">2. overflow: hidden</h2>
+    <div 
+        style="
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: hidden;
+        ">
+        This text is too long for the box and gets cut off. 
+        The extra content is hidden and cannot be seen.
+        This text is too long for the box and gets cut off. 
+        The extra content is hidden and cannot be seen.
+    </div>
+
+    <h2 style="margin-top: 40px;">3. overflow: scroll</h2>
+    <div 
+        style="
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: scroll;
+        ">
+        This content is long enough to require scrolling. 
+        Scrollbars appear even if content does not overflow much.
+        Keep scrolling to see hidden content.
+    </div>
+
+    <h2 style="margin-top: 40px;">4. overflow: auto</h2>
+    <div 
+        style="
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow: auto;
+        ">
+        This content will show scrollbars only when it overflows. 
+        If there's enough text, scrollbars appear automatically.
+        Add more content to force scrolling.
+    </div>
+
+    <h2 style="margin-top: 40px;">5. overflow-x and overflow-y</h2>
+    <div 
+        style="
+            width: 250px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 20px 0;
+            padding: 10px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            
+        ">
+        This is a horizontal scroll demo. The text is very long and moves in one line only, 
+        so you can scroll sideways. This is a horizontal scroll demo. The text is very long and moves in one line only, 
+        so you can scroll sideways.
+    </div>
+
+</body>
+</html>
